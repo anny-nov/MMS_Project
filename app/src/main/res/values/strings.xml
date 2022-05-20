@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map">Map</string>
+    <string name="event">Event</string>
+    <string name="place">Place</string>
+    <string name="accommodation">Accommodation</string>
+    <string name="user">User</string>
+    <string name="comment">Comment</string>
+    <string name="zero">0:00</string>
+    <string name="viewMap">View on the map</string>
+    <string name="address">Address</string>
+    <string name="video">Video</string>
+</resources>

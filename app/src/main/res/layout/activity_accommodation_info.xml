@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll2"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AccomodationInfoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username_acc"
+            android:layout_width="292dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="10dp"
+            android:hint="@string/user"
+            android:inputType="textNoSuggestions"
+            android:textColor="#F3EAEA"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar_acc" />
+
+        <EditText
+            android:id="@+id/comment_input_acc"
+            android:layout_width="346dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="10dp"
+            android:hint="Write a comment here"
+            android:inputType="textNoSuggestions"
+            android:textColor="#F3EAEA"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_acc" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-25dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            android:rating="0"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+        <TextView
+            android:id="@+id/Accommodation_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/name"
+            android:textColor="#F3EAEA"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/ratingTotal_acc"
+            style="@android:style/Widget.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="24dp"
+            android:progressTint="#D00DBF96"
+            android:scaleX="0.7"
+            android:scaleY="0.7
+"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Accommodation_name"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/description_acc"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/description"
+            android:textColor="#F3EAEA"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingTotal_acc" />
+
+        <TextView
+            android:id="@+id/address_acc"
+            android:layout_width="375dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="19dp"
+            android:text="@string/address"
+            android:textColor="#F3EAEA"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Accommodation_name" />
+
+        <TextView
+            android:id="@+id/img_text_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:text="Images"
+            android:textColor="#F3EAEA"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_acc" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imgSlider_acc"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            app:auto_cycle="true"
+            app:corner_radius="5"
+            app:delay="0"
+            app:error_image="@drawable/placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_text_acc"
+            app:period="1000"
+            app:placeholder="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/review_title_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Reviews"
+            android:textColor="#F3EAEA"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/send_comment_acc" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comment_view_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/review_title_acc" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="10dp"
+            android:text="Location"
+            android:textColor="#F3EAEA"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSlider_acc" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_text">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/send_comment_acc"
+            style="@android:style/Widget.DeviceDefault.Button"
+            android:layout_width="118dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#555454"
+            android:text="Send review"
+            android:textColor="#F3EAEA"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_input_acc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

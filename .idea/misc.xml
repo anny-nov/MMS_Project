@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_accommodation_info.xml" value="0.32126398946675444" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_accomodation_info.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_event_info.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_info.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_list.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tour_list.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tour_list2.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/comment_row.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/fragment_map.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/place_row.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/xml/network_security_config.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project_main/app/src/main/res/layout/activity_maps.xml" value="0.2259963768115942" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_maps.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_info.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_list.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tour_list.xml" value="0.264" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/fragment_map.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/fragment_place.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/place_row.xml" value="0.2033514492753623" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/tour_row.xml" value="0.264" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/app/src/main/res/layout/activity_maps.xml" value="0.4" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/app/src/main/res/layout/activity_place_info.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/app/src/main/res/layout/fragment_map.xml" value="0.16" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/app/src/main/res/layout/fragment_place.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/app/src/main/res/menu/menu.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

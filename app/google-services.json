@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "469093409290",
+    "project_id": "cityguide-anya",
+    "storage_bucket": "cityguide-anya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469093409290:android:c9864c4acecf63672135f3",
+        "android_client_info": {
+          "package_name": "pl.edu.pwr.i269691.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469093409290-f292l0i1rvrbroa973j56042qqu9sp3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK5c2RGfIIXozspFGBDcU21H9Pqe0Seqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469093409290-f292l0i1rvrbroa973j56042qqu9sp3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
