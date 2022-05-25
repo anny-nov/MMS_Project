@@ -212,7 +212,7 @@ public class Connector {
         }
     }
 
-    public ArrayList<Place> Get_CityTourPlaces(){
+    public ArrayList<Place> Get_CityTourPlaces(int id1){
         ArrayList<Place> places = new ArrayList<Place>();
         try{
             Statement st = connection.createStatement();
@@ -223,7 +223,7 @@ public class Connector {
                     "ON t.id = tl.id " +
                     "INNER JOIN places as p " +
                     "ON tl.place_id = p.id " +
-                    "WHERE t.id = 1";
+                    "WHERE t.id ="+id1;
             ResultSet rs = st.executeQuery(selectPlace);
             //Log.e("Number","!!!Nplaces "+rs);
             while (rs.next()) {

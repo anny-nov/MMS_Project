@@ -21,7 +21,7 @@ import java.net.URL;
 import java.util.ArrayList;
 
 import pl.edu.pwr.i269691.project.entity.Event;
-import pl.edu.pwr.i269691.project.entity.Place;
+
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder> {
     private OnEventClickListener onEventClickListener;

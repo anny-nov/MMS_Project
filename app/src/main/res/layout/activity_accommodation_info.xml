@@ -77,15 +77,13 @@
 
         <TextView
             android:id="@+id/description_acc"
-            android:layout_width="372dp"
+            android:layout_width="342dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="16dp"
             android:text="@string/description"
             android:textColor="#F3EAEA"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ratingTotal_acc" />
 

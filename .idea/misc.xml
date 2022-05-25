@@ -3,24 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_accommodation_info.xml" value="0.32126398946675444" />
-        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_accomodation_info.xml" value="0.22418478260869565" />
-        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_event_info.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_info.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_list.xml" value="0.22418478260869565" />
-        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tour_list.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tour_list2.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/comment_row.xml" value="0.2" />
-        <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/fragment_map.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/layout/place_row.xml" value="0.22418478260869565" />
         <entry key="..\:/AndroidStudioProjects/Project/Android-Project--with-Alissa-/app/src/main/res/xml/network_security_config.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudioProjects/Project_main/app/src/main/res/layout/activity_accommodation_info.xml" value="0.22327898550724637" />
+        <entry key="..\:/AndroidStudioProjects/Project_main/app/src/main/res/layout/activity_event_info.xml" value="0.22327898550724637" />
         <entry key="..\:/AndroidStudioProjects/Project_main/app/src/main/res/layout/activity_maps.xml" value="0.2259963768115942" />
+        <entry key="..\:/AndroidStudioProjects/Project_main/app/src/main/res/layout/activity_place_info.xml" value="0.22327898550724637" />
+        <entry key="..\:/AndroidStudioProjects/Project_main/app/src/main/res/layout/activity_tour_list.xml" value="0.22327898550724637" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_accommodation_info.xml" value="0.1875" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_all_tours.xml" value="0.19583333333333333" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_event_info.xml" value="0.16766826923076922" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_maps.xml" value="0.22826086956521738" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_info.xml" value="0.22826086956521738" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_place_list.xml" value="0.22826086956521738" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tour_list.xml" value="0.264" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tour_list2.xml" value="0.1546875" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/activity_tours_all.xml" value="0.25416666666666665" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/comment_row.xml" value="0.18568840579710144" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/fragment_map.xml" value="0.22826086956521738" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/fragment_place.xml" value="0.22826086956521738" />
+        <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/item.xml" value="0.12273550724637682" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/place_row.xml" value="0.2033514492753623" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/layout/tour_row.xml" value="0.264" />
         <entry key="..\:/POLAND_SEMESTER/Application_programming/PROJECT/Android-Project--with-Alissa-/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />

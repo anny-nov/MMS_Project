@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_maps);
 
         Intent intent;
-        intent = new Intent(MainActivity.this, TourInfoActivity.class);
+        intent = new Intent(MainActivity.this, AllToursActivity.class);
         startActivity(intent);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, mapFragment).commit();

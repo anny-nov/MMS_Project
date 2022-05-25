@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,18 +23,35 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import pl.edu.pwr.i269691.project.entity.Place;
+
 
 public class MapFragment extends Fragment implements GoogleMap.OnInfoWindowClickListener {
     Double latitude = null;
     Double longitude = null;
+    double[] latitudes;
+    double[] longitudes;
+    int size = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Bundle arg = getArguments();
-        if (arg != null) {
+        if (arg != null && arg.containsKey("Latitude") && arg.containsKey("Longitude")) {
             latitude = this.getArguments().getDouble("Latitude");
             longitude = this.getArguments().getDouble("Longitude");
+        }
+
+        if (arg != null && arg.containsKey("Latitudes") && arg.containsKey("Longitudes") && arg.containsKey("Size")) {
+            size=this.getArguments().getInt("Size");
+            Log.e("Size","The size is "+size);
+            latitudes = this.getArguments().getDoubleArray("Latitudes");
+            longitudes = this.getArguments().getDoubleArray("Longitudes");
+            Log.e("Size","The lat size is "+latitudes.length);
+            Log.e("Size","The long size is "+longitudes.length);
         }
         // Initialize view
         View view=inflater.inflate(R.layout.fragment_map, container, false);
@@ -66,6 +84,37 @@ public class MapFragment extends Fragment implements GoogleMap.OnInfoWindowClick
                             .title("This place located here")
                     );
                 }
+
+                List<LatLng> coordinatesList = new ArrayList<>();
+
+                if(latitudes !=null && longitudes != null) {
+                    LatLng[] places = new LatLng[size];
+                    for (int i = 0; i < size; i++) {
+                        if (i == 0) {
+                            googleMap.addMarker(new MarkerOptions()
+                                    .position(new LatLng(latitudes[i], longitudes[i]))
+                                    .title("Place" + i)
+                                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)
+                                    ));
+                            //Log.e("Placing", "Now I am placing marker number " + i);
+
+                            coordinatesList.add( new LatLng(latitudes[i], longitudes[i]));
+                        }
+                        if (i > 0) {
+                            googleMap.addMarker(new MarkerOptions()
+                                    .position(new LatLng(latitudes[i], longitudes[i]))
+                                    .title("Place" + i)
+                            );
+                            //Log.e("Placing", "Now I am placing marker number " + i + " " + latitudes[i] + " " + longitudes[i]);
+                            coordinatesList.add( new LatLng(latitudes[i], longitudes[i]));
+                        }
+
+                    }
+                }
+
+                Polyline polyline1 = googleMap.addPolyline(new PolylineOptions()
+                        .clickable(true)
+                        .addAll(coordinatesList));
                 /*LatLng sanMarko = new LatLng(45.434185, 12.337817);
                 googleMap.addMarker(new MarkerOptions()
                         .position(sanMarko)

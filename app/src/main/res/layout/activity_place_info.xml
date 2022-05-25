@@ -81,14 +81,12 @@
 
         <TextView
             android:id="@+id/description"
-            android:layout_width="372dp"
+            android:layout_width="341dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="16dp"
             android:text="@string/description"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ratingTotal" />
 
@@ -98,7 +96,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
             android:contentDescription="TODO"
+            app:layout_constraintEnd_toStartOf="@+id/timer"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/description"
             app:srcCompat="@drawable/ic_play" />
@@ -110,6 +110,7 @@
             android:layout_marginStart="6dp"
             android:layout_marginTop="14dp"
             android:text="@string/zero"
+            app:layout_constraintEnd_toStartOf="@+id/player"
             app:layout_constraintStart_toEndOf="@+id/imagePlay"
             app:layout_constraintTop_toBottomOf="@+id/description" />
 
@@ -117,20 +118,18 @@
             android:id="@+id/address"
             android:layout_width="375dp"
             android:layout_height="37dp"
+            android:layout_marginStart="15dp"
             android:text="@string/address"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Place_name" />
 
         <SeekBar
             android:id="@+id/player"
             style="@style/Widget.AppCompat.SeekBar"
-            android:layout_width="304dp"
-            android:layout_height="24dp"
+            android:layout_width="265dp"
+            android:layout_height="21dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="35dp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/timer"
             app:layout_constraintTop_toBottomOf="@+id/description" />
 

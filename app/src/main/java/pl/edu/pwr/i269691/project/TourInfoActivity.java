@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import pl.edu.pwr.i269691.project.entity.Place;
@@ -50,8 +51,9 @@ public class TourInfoActivity extends AppCompatActivity implements BottomNavigat
         ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.INTERNET}, PackageManager.PERMISSION_GRANTED);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
+        Intent intent = getIntent();
         connector.Connect();
-        places = connector.Get_CityTourPlaces();
+        places = connector.Get_CityTourPlaces(intent.getIntExtra("Chosen",1));
         initRecyclerView();
 
         nameView = (TextView) findViewById(R.id.nameView);
@@ -62,8 +64,7 @@ public class TourInfoActivity extends AppCompatActivity implements BottomNavigat
         bottomNavigationView.setSelectedItemId(R.id.map);
 
         try {
-            connector.Connect();
-            Tour tour = connector.Get_Tour_by_ID(1);
+            Tour tour = connector.Get_Tour_by_ID(intent.getIntExtra("Chosen",1));
             nameView.setText(tour.getName());
             descriptionName.setText(tour.getDescription());
 
@@ -71,6 +72,21 @@ public class TourInfoActivity extends AppCompatActivity implements BottomNavigat
             System.out.println(e.getMessage());
         }
 
+
+        Bundle bundle = new Bundle();
+        bundle.putInt("Size", places.size());
+        double[] latitudes = new double[places.size()];
+        double[] longitudes = new double[places.size()];
+        int i = 0;
+        for (Place place: places) {
+                latitudes[i] = place.getLatitude();
+                longitudes[i] = place.getLongitude();
+                i++;
+        }
+        bundle.putDoubleArray("Latitudes",latitudes);
+        bundle.putDoubleArray("Longitudes",longitudes);
+        mapFragment.setArguments(bundle);
+        
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
